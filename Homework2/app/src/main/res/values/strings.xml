@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Homework2</string>
+    <string name="profile">Profile</string>
+    <string name="chosen">chosen</string>
+    <string name="previous">previous</string>
+    <string name="contacts">contacts</string>
+    <string name="phone">phone</string>
+    <string name="settings">settings</string>
+    <string name="enterText_hint">Enter a phone number</string>
+    <string name="call_Button">Call</string>
+    <string name="callingFragment_text">Calling\n</string>
+</resources>
