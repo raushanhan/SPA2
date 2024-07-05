@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/phoneFragment">
+
+    <fragment
+        android:id="@+id/phoneFragment"
+        android:name="ru.kpfu.itis.androidpractice24.homework2.PhoneFragment"
+        android:label="fragment_phone"
+        tools:layout="@layout/fragment_phone" >
+        <action
+            android:id="@+id/action_phoneFragment_to_chosenFragment"
+            app:destination="@id/chosenFragment" />
+        <action
+            android:id="@+id/action_phoneFragment_to_callingFragment"
+            app:destination="@id/callingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chosenFragment"
+        android:name="ru.kpfu.itis.androidpractice24.homework2.ChosenFragment"
+        android:label="fragment_chosen"
+        tools:layout="@layout/fragment_chosen" >
+        <action
+            android:id="@+id/action_chosenFragment_to_previousFragment"
+            app:destination="@id/previousFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/previousFragment"
+        android:name="ru.kpfu.itis.androidpractice24.homework2.PreviousFragment"
+        android:label="fragment_previous"
+        tools:layout="@layout/fragment_previous" >
+        <action
+            android:id="@+id/action_previousFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="ru.kpfu.itis.androidpractice24.homework2.ContactsFragment"
+        android:label="fragment_contacts"
+        tools:layout="@layout/fragment_contacts" >
+        <action
+            android:id="@+id/action_contactsFragment_to_contactDetailsFragment"
+            app:destination="@id/contactDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="ru.kpfu.itis.androidpractice24.homework2.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_contactsFragment"
+            app:destination="@id/contactsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactDetailsFragment"
+        android:name="ru.kpfu.itis.androidpractice24.homework2.ContactDetailsFragment"
+        android:label="fragment_contact_details"
+        tools:layout="@layout/fragment_contact_details" >
+        <action
+            android:id="@+id/action_contactDetailsFragment_to_contactsFragment"
+            app:destination="@id/contactsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/callingFragment"
+        android:name="ru.kpfu.itis.androidpractice24.homework2.CallingFragment"
+        android:label="fragment_calling"
+        tools:layout="@layout/fragment_calling" />
+</navigation>
