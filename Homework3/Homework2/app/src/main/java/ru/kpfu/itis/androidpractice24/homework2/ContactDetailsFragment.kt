@@ -8,7 +8,7 @@ import com.bumptech.glide.Glide
 import ru.kpfu.itis.androidpractice24.homework2.databinding.FragmentContactDetailsBinding
 
 
-class ContactDetailsFragment : Fragment() {
+class ContactDetailsFragment : Fragment(R.layout.fragment_contact_details) {
 
 
     private var binding: FragmentContactDetailsBinding? = null

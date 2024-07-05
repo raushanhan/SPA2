@@ -11,6 +11,7 @@ class ContactAdapter(
     private val glide: RequestManager,
     private val onClick: (Int) -> Unit
 ) : RecyclerView.Adapter<ContactHolder>() {
+
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
